@@ -1,0 +1,212 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eeeeee;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CV
+========================= */
+
+.cv {
+    width: 850px;
+    max-width: 95%;
+    margin: 40px auto;
+    background-color: white;
+    padding: 45px;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+
+    border-radius: 8px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    display: flex;
+    align-items: center;
+
+    gap: 35px;
+
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+
+    border-bottom: 3px solid #222;
+}
+
+
+/* =========================
+   PHOTO
+========================= */
+
+.photo {
+    width: 170px;
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 5px;
+
+    border: 3px solid #222;
+}
+
+
+/* =========================
+   IDENTITÉ
+========================= */
+
+.identite {
+    flex: 1;
+}
+
+.identite h1 {
+    font-size: 36px;
+    color: #111;
+
+    margin-bottom: 5px;
+}
+
+.identite h2 {
+    font-size: 22px;
+
+    font-weight: normal;
+
+    color: #555;
+
+    margin-bottom: 18px;
+}
+
+.identite p {
+    font-size: 15px;
+
+    margin-bottom: 4px;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    margin-bottom: 30px;
+}
+
+section > h2 {
+    font-size: 22px;
+
+    color: #222;
+
+    margin-bottom: 15px;
+
+    padding-bottom: 7px;
+
+    border-bottom: 2px solid #222;
+}
+
+
+/* =========================
+   TEXTE
+========================= */
+
+section p {
+    font-size: 15px;
+
+    color: #444;
+}
+
+
+/* =========================
+   FORMATION / PROJETS
+========================= */
+
+.item {
+    margin-bottom: 20px;
+}
+
+.item h3 {
+    font-size: 18px;
+
+    margin-bottom: 5px;
+
+    color: #222;
+}
+
+.item span {
+    display: inline-block;
+
+    margin-top: 5px;
+
+    font-size: 14px;
+
+    color: #666;
+}
+
+
+/* =========================
+   LISTES
+========================= */
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 7px;
+
+    font-size: 15px;
+
+    color: #444;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .cv {
+        width: 95%;
+
+        padding: 25px;
+    }
+
+    .header {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .photo {
+        width: 150px;
+        height: 180px;
+    }
+
+    .identite h1 {
+        font-size: 28px;
+    }
+
+    .identite h2 {
+        font-size: 19px;
+    }
+}
